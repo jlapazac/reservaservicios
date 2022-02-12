@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "28fabaf9-9307-46f5-b20e-c8f7c2472613",
+		"name": "Reserva Asesoria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoreserva\": \"R-20212B-002\",\r\n    \"grupoalumno\": \"GRP002\",\r\n    \"tema\": \"Lineamientos para una implementacion de IA\",\r\n    \"codigoturno\": \"4d7948f6-5d40-46d0-a55e-08d9b5c97b3f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:24748/api/ReservaDocente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24748",
+					"path": [
+						"api",
+						"ReservaDocente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReservas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:24748/api/ReservaDocente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24748",
+					"path": [
+						"api",
+						"ReservaDocente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReservaUnica",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:24748/api/ReservaDocente/b2b57042-2ae0-4a92-2f8e-08d9ede38bec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24748",
+					"path": [
+						"api",
+						"ReservaDocente",
+						"b2b57042-2ae0-4a92-2f8e-08d9ede38bec"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
